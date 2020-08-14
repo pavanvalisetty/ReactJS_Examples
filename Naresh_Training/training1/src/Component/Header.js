@@ -9,6 +9,7 @@ class Header extends Component {
       title: "My Test App - State Props Explanation",
       counter: 0,
       searchText: "",
+      value: "coconut",
     };
   }
   OnButtonClick = (event) => {
@@ -18,6 +19,13 @@ class Header extends Component {
     this.setState({
       searchText: event.target.value ? event.target.value : "",
     });
+    this.props.userText(event.target.value);
+  };
+  handleChange = (event) => {
+    this.setState({
+      searchText: event.target.value ? event.target.value : "",
+    });
+    this.props.userText(event.target.value);
   };
   render() {
     console.log("inside render");
@@ -32,6 +40,13 @@ class Header extends Component {
             {" "}
             Click
           </button>
+          <select value={this.state.value} onChange={this.handleChange}>
+            {" "}
+            <option value="REACT">REACT</option>
+            <option value="developer">developer</option>
+            <option value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
+          </select>
         </center>
       </header>
     );

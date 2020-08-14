@@ -1,0 +1,49 @@
+React JS App
+---------------------
+npx create-react-app my-app
+
+(npx is a package runner tool that comes with npm 5.2+ and higher, see instructions for older npm versions)
+npm
+
+npm init react-app my-app
+
+npm init <initializer> is available in npm 6+
+Yarn
+
+yarn create react-app my-app
+
+----------------------------
+cd my-app
+-->npm start or yarn start
+Runs the app in development mode.
+Open http://localhost:3000 to view it in the browser.
+npm test or yarn test
+
+Runs the test watcher in an interactive mode.
+By default, runs tests related to files changed since the last commit.
+npm run build or yarn build
+
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+npm install @material-ui/core
+npm install @material-ui/icons
+
+-----------------------------------
+Common commands
+---------------------------------
+npx create-react-app my-app
+npm start
+
+-> start the server
+npm run build
+-> Bundles the app for production
+npm test
+-> starts the test runner
+npm run eject
+-> 
+
+
+-------------------------------------
+command to add Router:
+npm i react-router-dom

@@ -4,6 +4,7 @@ import "./App.css";
 import MyHeader from "./Component/Header";
 import Footer from "./Component/Footer";
 
+// App equal to Home.js page for Aakash class
 const App = () => {
   return (
     <div className="App">
